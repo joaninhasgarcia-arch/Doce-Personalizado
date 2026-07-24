@@ -1,22 +1,20 @@
-# Doce Modelagem — Quiz de Vendas
+# Doce Modelagem — Funil Quiz
 
-Este pacote contém somente:
+Este pacote contém somente dois arquivos:
 
-- `index.html` — página completa, com CSS e JavaScript incorporados.
+- `index.html` — página completa, com HTML, CSS e JavaScript incorporados.
 - `README.md` — instruções rápidas.
 
-## Como publicar no GitHub Pages
+## Ajustes desta versão
 
-1. Crie um repositório no GitHub.
-2. Envie `index.html` e `README.md` para a raiz do repositório.
-3. Abra **Settings > Pages**.
-4. Em **Build and deployment**, escolha **Deploy from a branch**.
-5. Selecione a branch `main` e a pasta `/root`.
-6. Salve e aguarde a publicação.
+- Textos da abertura, apresentação, perguntas, objeções, custos e oferta aproximados da copy da página de referência enviada.
+- Notificação de cadastro integrada ao final da primeira etapa, sem cobrir o conteúdo.
+- Fontes, tamanhos, espaçamentos, paleta rosa-clara e estrutura mobile preservados.
+- Avisos discretos sobre variação de resultados adicionados junto às menções de faturamento.
 
-## Alterar o link de checkout
+## Alterar o checkout
 
-Abra o final do arquivo `index.html` e procure:
+Abra o `index.html` e procure por:
 
 ```js
 checkoutUrl: "https://SEU-LINK-DE-CHECKOUT-AQUI.com"
@@ -24,53 +22,19 @@ checkoutUrl: "https://SEU-LINK-DE-CHECKOUT-AQUI.com"
 
 Substitua pelo link real do checkout.
 
-## Alterar preço, nome e textos
+## Alterar nomes da notificação
 
-Pesquise no `index.html` pelos textos:
-
-- `Doce Modelagem`
-- `R$ 27,90`
-- `Docinhos de leite em pó lucrativos`
-
-Edite diretamente, sem precisar modificar a estrutura da página.
-
-## Colocar as imagens da expert e dos produtos
-
-O protótipo usa ilustrações feitas em CSS para manter tudo dentro do HTML.
-Quando as imagens finais estiverem prontas, substitua os blocos abaixo por tags `<img>`:
-
-- `.hero-art` — imagem principal da expert e dos doces.
-- `.visual-card` — imagem de produção, ingredientes ou produtos.
-- `.student-art` — resultados das alunas.
-
-Exemplo:
-
-```html
-<img src="https://seu-site.com/imagem.jpg" alt="Docinhos personalizados">
-```
-
-Para continuar mantendo apenas um HTML, também é possível converter as imagens para Base64 e colocá-las diretamente no atributo `src`.
-
-## Cronômetro
-
-No bloco `CONFIG`, altere:
-
-```js
-countdownSeconds: 9 * 60 + 54
-```
-
-O valor representa minutos e segundos.
-
-## Notificações de cadastro
-
-Os nomes aparecem em:
+No bloco `CONFIG`, edite:
 
 ```js
 toastNames: ["Mariana", "Fernanda", "Juliana", "Roberta", "Ana"]
 ```
 
-Use apenas nomes de clientes reais ou troque a mensagem por uma notificação genérica.
+Use apenas nomes autorizados.
 
-## Observação importante
+## Publicar no GitHub Pages
 
-Antes de publicar, revise promessas de renda, quantidade de vagas, depoimentos, preço e prazo da promoção. Mantenha somente informações verdadeiras e comprováveis.
+1. Envie `index.html` e `README.md` para a raiz do repositório.
+2. Abra **Settings → Pages**.
+3. Selecione a branch principal e a pasta raiz.
+4. Salve e aguarde a publicação.
