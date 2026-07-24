@@ -1,82 +1,76 @@
-# Funil de Quiz — HTML único
+# Doce Modelagem — Quiz de Vendas
 
-Template responsivo em **HTML, CSS e JavaScript puro**, pronto para publicar no GitHub Pages, Vercel ou Netlify.
+Este pacote contém somente:
 
-## Arquivos do ZIP
+- `index.html` — página completa, com CSS e JavaScript incorporados.
+- `README.md` — instruções rápidas.
 
-- `index.html`: contém toda a estrutura, o design, a lógica do quiz e as imagens demonstrativas incorporadas.
-- `README.md`: instruções de personalização e publicação.
+## Como publicar no GitHub Pages
 
-Não existe pasta `assets`. O CSS, o JavaScript e os SVGs demonstrativos já estão dentro do próprio `index.html`.
-
-## Personalização rápida
-
-Abra o `index.html` e procure por:
-
-```js
-const CONFIG = {
-```
-
-Edite esse objeto para adaptar o funil ao seu produto:
-
-1. `brand`: nome do produto.
-2. `checkoutUrl`: link real do checkout.
-3. `pixelId`: ID do Pixel da Meta, quando necessário.
-4. `intro`: título, texto, imagem e benefícios da abertura.
-5. `questions`: perguntas e respostas do quiz.
-6. `insight`: tela intermediária para quebrar uma objeção.
-7. `result`: método, módulos, provas sociais e FAQ.
-8. `offer`: preço, itens e textos da oferta.
-9. `urgency.enabled`: mantenha `false` até existir uma condição real e verificável.
-
-## Como substituir as imagens
-
-As imagens provisórias estão incorporadas como `data:image/svg+xml;base64,...` dentro do `index.html`.
-
-Para usar imagens próprias, você pode:
-
-- substituir o valor de `image`, `mainImage` ou das imagens de depoimentos por uma URL pública; ou
-- converter sua imagem para Base64 e colar como `data:image/webp;base64,...`.
-
-Recomendações:
-
-- capa/hero: 1080 × 1080 ou 1080 × 1350;
-- especialista: 1080 × 1350;
-- provas sociais: 1200 × 825;
-- prefira WebP para carregamento mais rápido.
-
-## Pixel da Meta
-
-O template já está preparado para disparar, quando o Pixel estiver configurado:
-
-- `PageView`;
-- `Lead` ao concluir o quiz;
-- `ViewContent` ao abrir o resultado;
-- `InitiateCheckout` ao clicar no botão da oferta.
-
-A compra deve ser enviada pela plataforma de checkout, preferencialmente por integração oficial ou API de conversões.
-
-## Publicar no GitHub Pages
-
-1. Crie um repositório novo.
+1. Crie um repositório no GitHub.
 2. Envie `index.html` e `README.md` para a raiz do repositório.
-3. Acesse **Settings → Pages**.
-4. Em **Build and deployment**, selecione **Deploy from a branch**.
-5. Escolha a branch `main` e a pasta `/root`.
+3. Abra **Settings > Pages**.
+4. Em **Build and deployment**, escolha **Deploy from a branch**.
+5. Selecione a branch `main` e a pasta `/root`.
 6. Salve e aguarde a publicação.
 
-## Publicar na Vercel
+## Alterar o link de checkout
 
-1. Importe o repositório do GitHub.
-2. Em **Framework Preset**, escolha **Other**.
-3. Deixe **Build Command** vazio.
-4. Deixe **Output Directory** vazio ou use `.`.
-5. Clique em **Deploy**.
+Abra o final do arquivo `index.html` e procure:
 
-## Testes antes de anunciar
+```js
+checkoutUrl: "https://SEU-LINK-DE-CHECKOUT-AQUI.com"
+```
 
-- confirme o link do checkout;
-- teste todas as respostas e o botão Voltar;
-- verifique o layout em celulares pequenos;
-- confira os eventos no Meta Pixel Helper e no Gerenciador de Eventos;
-- substitua todo conteúdo demonstrativo por conteúdo real.
+Substitua pelo link real do checkout.
+
+## Alterar preço, nome e textos
+
+Pesquise no `index.html` pelos textos:
+
+- `Doce Modelagem`
+- `R$ 27,90`
+- `Docinhos de leite em pó lucrativos`
+
+Edite diretamente, sem precisar modificar a estrutura da página.
+
+## Colocar as imagens da expert e dos produtos
+
+O protótipo usa ilustrações feitas em CSS para manter tudo dentro do HTML.
+Quando as imagens finais estiverem prontas, substitua os blocos abaixo por tags `<img>`:
+
+- `.hero-art` — imagem principal da expert e dos doces.
+- `.visual-card` — imagem de produção, ingredientes ou produtos.
+- `.student-art` — resultados das alunas.
+
+Exemplo:
+
+```html
+<img src="https://seu-site.com/imagem.jpg" alt="Docinhos personalizados">
+```
+
+Para continuar mantendo apenas um HTML, também é possível converter as imagens para Base64 e colocá-las diretamente no atributo `src`.
+
+## Cronômetro
+
+No bloco `CONFIG`, altere:
+
+```js
+countdownSeconds: 9 * 60 + 54
+```
+
+O valor representa minutos e segundos.
+
+## Notificações de cadastro
+
+Os nomes aparecem em:
+
+```js
+toastNames: ["Mariana", "Fernanda", "Juliana", "Roberta", "Ana"]
+```
+
+Use apenas nomes de clientes reais ou troque a mensagem por uma notificação genérica.
+
+## Observação importante
+
+Antes de publicar, revise promessas de renda, quantidade de vagas, depoimentos, preço e prazo da promoção. Mantenha somente informações verdadeiras e comprováveis.
