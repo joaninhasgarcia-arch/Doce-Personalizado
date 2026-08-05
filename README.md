@@ -1,19 +1,17 @@
-# Doce Modelagem — Quiz com Mariana Alves (abertura alinhada)
+# Doce Modelagem — Quiz com Mariana Alves (imagens nas respostas)
 
 Este pacote contém somente dois arquivos:
 
 - `index.html` — página completa com HTML, CSS, JavaScript e todas as imagens incorporadas em Base64.
 - `README.md` — instruções de publicação e edição.
 
-## Correções desta versão
+## Alterações desta versão
 
-- Removido o comentário escapado que aparecia como texto no topo da página.
-- Abertura reorganizada para acompanhar o alinhamento, a hierarquia e os espaçamentos da página de referência.
-- Título, parágrafos, destaques e margens foram recalibrados para celular e computador.
-- Retirado o texto “com Mariana Alves” do cabeçalho inicial para manter a composição mais limpa; a especialista continua apresentada na seção seguinte.
-- Removida a legenda sobreposta à imagem principal.
-- Mantidas a imagem da Mariana Alves, a apresentação da especialista, a vitrine de doces, a prova social, o quiz, o cronômetro e a oferta.
-- Todas as imagens continuam embutidas no próprio `index.html`; não existe pasta `assets`.
+- Na etapa **“A receita é fácil para iniciantes?”**, a ilustração antiga foi substituída pela fotografia da Mariana Alves preparando os docinhos.
+- Na etapa **“O custo é acessível para fazer?”**, a grade de ícones foi substituída pela fotografia dos ingredientes e corantes.
+- As duas imagens foram incorporadas diretamente no `index.html`; não existe pasta `assets`.
+- Foram preservados o alinhamento, o cronômetro, as perguntas, a prova social, a oferta e todo o funcionamento do quiz.
+- O layout continua responsivo para celular e computador.
 
 ## Publicar no GitHub Pages
 
