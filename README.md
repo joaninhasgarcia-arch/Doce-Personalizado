@@ -1,26 +1,30 @@
-# Doce Modelagem — Quiz com Mariana Alves (imagens nas respostas)
+# Doce Modelagem — Quiz com prova social em carrossel
 
 Este pacote contém somente dois arquivos:
 
-- `index.html` — página completa com HTML, CSS, JavaScript e todas as imagens incorporadas em Base64.
+- `index.html` — página completa, com HTML, CSS, JavaScript e todas as imagens incorporadas em Base64.
 - `README.md` — instruções de publicação e edição.
 
 ## Alterações desta versão
 
-- Na etapa **“A receita é fácil para iniciantes?”**, a ilustração antiga foi substituída pela fotografia da Mariana Alves preparando os docinhos.
-- Na etapa **“O custo é acessível para fazer?”**, a grade de ícones foi substituída pela fotografia dos ingredientes e corantes.
-- As duas imagens foram incorporadas diretamente no `index.html`; não existe pasta `assets`.
-- Foram preservados o alinhamento, o cronômetro, as perguntas, a prova social, a oferta e todo o funcionamento do quiz.
-- O layout continua responsivo para celular e computador.
+- A seção **“Veja alguns depoimentos das minhas alunas”** agora possui um carrossel com os depoimentos de **Juliana** e **Camila**.
+- O carrossel dos depoimentos avança automaticamente enquanto a visitante permanece nessa etapa.
+- Também é possível trocar o depoimento pelas setas, pelos indicadores ou deslizando o dedo no celular.
+- A seção **“Alguns docinhos feitos por alunas da turma”** foi incorporada logo abaixo dos depoimentos, sem criar uma etapa separada.
+- Foram inseridos os trabalhos das alunas **Juliana**, **Irene** e **Luara**.
+- O carrossel dos trabalhos permite rolagem lateral e deixa uma parte do próximo cartão visível para indicar que há mais imagens.
+- As etapas seguintes foram renumeradas e o funcionamento do carregamento, da oferta, do cronômetro e dos botões foi preservado.
+- Todas as cinco imagens novas estão embutidas diretamente no `index.html`; não existe pasta `assets`.
 
 ## Publicar no GitHub Pages
 
-1. Abra o repositório da página.
+1. Abra o repositório usado para publicar a página.
 2. Envie `index.html` e `README.md` para a raiz do repositório.
-3. Acesse **Settings → Pages**.
-4. Em **Build and deployment**, selecione **Deploy from a branch**.
-5. Escolha a branch principal (`main`) e a pasta raiz (`/root`).
-6. Salve e aguarde a atualização da publicação.
+3. Substitua os arquivos antigos quando o GitHub solicitar confirmação.
+4. Acesse **Settings → Pages**.
+5. Em **Build and deployment**, selecione **Deploy from a branch**.
+6. Escolha a branch principal (`main`) e a pasta raiz (`/root`).
+7. Salve e aguarde alguns minutos pela atualização.
 
 ## Alterar o checkout
 
@@ -32,16 +36,16 @@ checkoutUrl: "https://SEU-LINK-DE-CHECKOUT-AQUI.com"
 
 Substitua pelo endereço real do checkout.
 
-## Editar a prova social
+## Tempo de troca dos depoimentos
 
-No final do `index.html`, procure por:
+No JavaScript, procure por:
 
 ```js
-toastNames: ["Jadiane", "Fernanda", "Juliana", "Roberta", "Ana", "Camila"]
+4800
 ```
 
-Use apenas nomes e informações verdadeiras quando o aviso for apresentado como compra, cadastro ou resultado real.
+Esse valor representa 4,8 segundos. Aumente ou diminua para ajustar a velocidade do carrossel automático.
 
 ## Antes de publicar
 
-Revise preço, promessa de faturamento, bônus, garantia, vagas, notificações e link do checkout. Mantenha apenas informações verdadeiras e comprováveis.
+Revise preço, promessa de faturamento, bônus, garantia, vagas, notificações, depoimentos e link do checkout. Mantenha apenas informações verdadeiras e comprováveis.
