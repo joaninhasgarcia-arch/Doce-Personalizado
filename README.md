@@ -1,51 +1,54 @@
-# Doce Modelagem — Quiz com prova social em carrossel
+# Doce Modelagem — Quiz com oferta final premium
 
-Este pacote contém somente dois arquivos:
+Esta versão mantém todas as etapas anteriores do quiz e altera **somente a última sessão de oferta**, seguindo a estrutura visual das referências enviadas.
 
-- `index.html` — página completa, com HTML, CSS, JavaScript e todas as imagens incorporadas em Base64.
-- `README.md` — instruções de publicação e edição.
+## Arquivos
 
-## Alterações desta versão
+- `index.html` — página completa, com estilos e scripts no próprio arquivo.
+- `README.md` — estas instruções.
 
-- A seção **“Veja alguns depoimentos das minhas alunas”** agora possui um carrossel com os depoimentos de **Juliana** e **Camila**.
-- O carrossel dos depoimentos avança automaticamente enquanto a visitante permanece nessa etapa.
-- Também é possível trocar o depoimento pelas setas, pelos indicadores ou deslizando o dedo no celular.
-- A seção **“Alguns docinhos feitos por alunas da turma”** foi incorporada logo abaixo dos depoimentos, sem criar uma etapa separada.
-- Foram inseridos os trabalhos das alunas **Juliana**, **Irene** e **Luara**.
-- O carrossel dos trabalhos permite rolagem lateral e deixa uma parte do próximo cartão visível para indicar que há mais imagens.
-- As etapas seguintes foram renumeradas e o funcionamento do carregamento, da oferta, do cronômetro e dos botões foi preservado.
-- Todas as cinco imagens novas estão embutidas diretamente no `index.html`; não existe pasta `assets`.
+Não existe pasta `assets` nesta versão.
 
-## Publicar no GitHub Pages
+## O que foi acrescentado na oferta final
 
-1. Abra o repositório usado para publicar a página.
-2. Envie `index.html` e `README.md` para a raiz do repositório.
-3. Substitua os arquivos antigos quando o GitHub solicitar confirmação.
-4. Acesse **Settings → Pages**.
-5. Em **Build and deployment**, selecione **Deploy from a branch**.
-6. Escolha a branch principal (`main`) e a pasta raiz (`/root`).
-7. Salve e aguarde alguns minutos pela atualização.
+- cronômetro e cartão de qualificação;
+- lista completa do treinamento;
+- apresentação dos quatro bônus;
+- cartões de preço e botões de compra em três pontos;
+- aviso de escassez e compra segura;
+- história “Dos docinhos ao meu primeiro carro”;
+- carrossel horizontal para três modelos;
+- prova social da comunidade e avaliações;
+- garantia de sete dias;
+- estrutura totalmente adaptada para celular.
 
-## Alterar o checkout
+## Locais reservados para as próximas imagens
 
-Abra o `index.html` e procure por:
+Os espaços estão identificados no HTML pelas propriedades `data-image-slot`:
 
-```js
+1. `app-expert` — arte principal com Mariana Alves, aplicativo, garantia e docinhos;
+2. `car-story` — foto da Mariana ao lado do carro;
+3. `model-1` — primeiro modelo de docinho;
+4. `model-2` — segundo modelo de docinho;
+5. `model-3` — terceiro modelo de docinho;
+6. `final-expert` — foto final da Mariana preparando os docinhos.
+
+Por enquanto, esses pontos exibem cartões elegantes de marcação. Quando as imagens forem enviadas, eles podem ser substituídos por imagens em Base64 dentro do próprio `index.html`.
+
+## Configurar o checkout
+
+No final do `index.html`, procure por:
+
+```javascript
 checkoutUrl: "https://SEU-LINK-DE-CHECKOUT-AQUI.com"
 ```
 
-Substitua pelo endereço real do checkout.
+Troque pelo endereço real do checkout. Todos os botões de compra usam esse mesmo link.
 
-## Tempo de troca dos depoimentos
+## Publicação no GitHub Pages
 
-No JavaScript, procure por:
-
-```js
-4800
-```
-
-Esse valor representa 4,8 segundos. Aumente ou diminua para ajustar a velocidade do carrossel automático.
-
-## Antes de publicar
-
-Revise preço, promessa de faturamento, bônus, garantia, vagas, notificações, depoimentos e link do checkout. Mantenha apenas informações verdadeiras e comprováveis.
+1. Crie ou abra o repositório.
+2. Envie `index.html` e `README.md` para a raiz.
+3. Abra **Settings → Pages**.
+4. Escolha a branch principal e a pasta `/root`.
+5. Salve e aguarde a publicação.
