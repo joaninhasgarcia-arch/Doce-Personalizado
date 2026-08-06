@@ -1,56 +1,46 @@
 # Bolos Gelados Gourmet — página de vendas em formato de quiz
 
-Esta versão transforma a página anterior de doces personalizados em uma oferta voltada para **bolos gelados recheados**, com linguagem gourmet e foco em produção para venda.
+Esta é a versão final da página de vendas em formato de quiz, totalmente adaptada para o treinamento **Bolos Gelados Gourmet**.
 
-## Nome escolhido
+## Atualização concluída
 
-**Bolos Gelados Gourmet**
-
-O nome é simples, comercial e fácil de entender. Ele comunica imediatamente o produto ensinado e aumenta a percepção de valor com o posicionamento gourmet.
-
-## Alterações realizadas
-
-- Título, descrição da página e identidade textual alterados para **Bolos Gelados Gourmet**.
-- Abertura reformulada para destacar bolos gelados cremosos, recheados e lucrativos.
-- Perguntas do quiz adaptadas para massa, recheios, produção, precificação e encomendas.
-- Blocos de objeção e investimento inicial ajustados para a nova proposta.
-- Conteúdo do treinamento atualizado com massas, recheios, caldas, montagem, corte, embalagem, conservação e vendas.
-- Bônus adaptados para validade, armazenamento, apresentação, embalagem e precificação.
-- História, depoimentos, comunidade, biografia e textos da oferta convertidos para bolos gelados.
-- Textos alternativos das imagens e informações de SEO atualizados.
-- Valor promocional mantido em **R$ 10,00 à vista**.
-- Cards de novas alunas e notificações rotativas preservados.
-- Estrutura responsiva, cronômetro, carrosséis, quiz e botões mantidos.
-
-## Importante sobre as imagens
-
-As imagens da versão anterior continuam incorporadas diretamente no `index.html` e foram mantidas como **imagens provisórias**, conforme solicitado. Por isso, algumas ainda mostram doces personalizados. Elas poderão ser substituídas por fotografias de bolos gelados em uma próxima atualização, sem necessidade de mudar novamente a copy.
-
-Não existe pasta `assets`: todas as imagens continuam em Base64 dentro do próprio HTML.
+- Capa principal substituída pela nova arte do curso.
+- Vitrine inicial atualizada com bolos gelados gourmet.
+- Imagem da especialista na cozinha substituída.
+- Imagem de ingredientes atualizada para massa e recheios de bolo.
+- Depoimentos de Juliana e Camila substituídos pelas versões em 9:16.
+- Resultados das alunas Juliana, Irene e Luara substituídos pelas novas artes.
+- Pôster do aplicativo atualizado para bolos gelados e garantia de **7 dias**.
+- Carrossel de modelos atualizado com recortes reais da nova vitrine de bolos.
+- Imagem final da especialista também atualizada.
+- Enquadramento, proporções, bordas e `object-fit` revisados para desktop e celular.
+- Todas as imagens continuam incorporadas em Base64 dentro do próprio `index.html`.
 
 ## Arquivos
 
-- `index.html` — página completa, pronta para publicação.
-- `README.md` — informações desta versão e instruções de uso.
+- `index.html` — página completa e independente, pronta para publicação.
+- `README.md` — informações desta versão e instruções de publicação.
+
+Não existe pasta `assets`. Basta enviar os dois arquivos para a raiz do repositório.
 
 ## Publicação no GitHub Pages
 
 1. Extraia o arquivo ZIP.
 2. Envie `index.html` e `README.md` para a raiz do repositório.
-3. Acesse **Settings > Pages**.
-4. Selecione a branch principal e a pasta raiz.
-5. Aguarde a publicação.
+3. No GitHub, abra **Settings > Pages**.
+4. Em **Build and deployment**, selecione a branch principal e a pasta raiz.
+5. Salve e aguarde a publicação.
 
 ## Checkout
 
-O link de compra ainda está configurado como placeholder. Substitua:
+O link de compra permanece configurado como placeholder. No final do `index.html`, localize o bloco `CONFIG` e substitua:
 
 ```text
 https://SEU-LINK-DE-CHECKOUT-AQUI.com
 ```
 
-pelo link real do checkout dentro do bloco `CONFIG`, próximo ao final do `index.html`.
+pelo endereço real do checkout.
 
 ## Observação comercial
 
-A página apresenta possibilidades de renda como objetivo de venda, não como garantia de faturamento. Os resultados dependem de fatores como execução, divulgação, preço, demanda local e constância.
+As referências de renda representam possibilidades e objetivos comerciais, não garantia de faturamento. Os resultados dependem da execução, divulgação, preço, demanda local e constância de cada aluna.
