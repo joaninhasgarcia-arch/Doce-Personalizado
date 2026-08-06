@@ -1,45 +1,25 @@
-# Doce Modelagem — Quiz atualizado
+# Doce Modelagem — Quiz com carrossel quadrado de modelos
 
-Esta versão parte da oferta final premium e inclui somente os ajustes solicitados nesta atualização.
-
-## Arquivos
-
-- `index.html` — página completa, com CSS, JavaScript e imagens incorporadas no próprio arquivo.
-- `README.md` — instruções resumidas.
-
-Não existe pasta `assets`. As imagens usadas nesta atualização estão em Base64 dentro do `index.html`.
+Esta versão mantém a página anterior e atualiza apenas a seção **“Veja alguns dos modelos que você vai aprender comigo”** na oferta final.
 
 ## Alterações realizadas
 
-- inserida a arte principal da oferta com Mariana Alves, aplicativo, garantia e docinhos;
-- inserida a foto de Mariana Alves ao lado do carro na seção “Dos docinhos ao meu primeiro carro”;
-- mantidos os demais espaços reservados para os três modelos de docinhos e para a imagem final da expert;
-- as perguntas de escolha única agora avançam automaticamente cerca de 0,4 segundo após a opção ser selecionada;
-- o botão **Continuar** foi mantido como alternativa de navegação e acessibilidade;
-- o carrossel de depoimentos inicia a troca automática quando entra na área visível da tela e pausa quando sai dela;
-- setas, pontos e gesto de deslizar do carrossel continuam funcionando.
-
-## Configurar o checkout
-
-No fim do `index.html`, procure por:
-
-```javascript
-checkoutUrl: "https://SEU-LINK-DE-CHECKOUT-AQUI.com"
-```
-
-Substitua pelo link real do checkout. Todos os botões de compra usam esse endereço.
+- Inclusão das 10 imagens enviadas no carrossel de modelos.
+- Todos os cards possuem proporção quadrada 1:1 e o mesmo tamanho.
+- Imagens centralizadas com preenchimento uniforme (`object-fit: cover`).
+- Carrossel responsivo, com deslize lateral no celular e uma pequena parte do próximo card visível.
+- Navegação por indicadores abaixo das imagens.
+- Troca automática enquanto o carrossel está visível na tela.
+- A troca automática pausa durante a interação da pessoa e respeita a opção de movimento reduzido do aparelho.
+- Todas as imagens estão incorporadas no próprio `index.html` em Base64, sem pasta `assets`.
 
 ## Publicação no GitHub Pages
 
-1. Envie `index.html` e `README.md` para a raiz do repositório.
-2. Abra **Settings → Pages**.
-3. Escolha a branch principal e a pasta `/root`.
-4. Salve e aguarde a publicação.
+1. Extraia o arquivo ZIP.
+2. Envie o `index.html` e este `README.md` para o repositório.
+3. Em **Settings > Pages**, selecione a branch principal e a pasta raiz.
+4. Aguarde a publicação do endereço.
 
+## Checkout
 
-## Correções de alinhamento
-
-- Removida a faixa visual “Compra 100% segura” com bandeiras e formas de pagamento que aparecia duplicada na oferta.
-- Corrigidas as margens nativas dos elementos `<figure>`, que faziam a arte da expert e a foto do carro ultrapassarem a área central no celular.
-- As duas imagens agora usam largura máxima de 100%, margens automáticas e alinhamento central responsivo.
-- Todas as imagens continuam incorporadas diretamente no `index.html`; não há pasta `assets`.
+O link do checkout continua sendo configurado no bloco `CONFIG`, próximo ao final do `index.html`.
