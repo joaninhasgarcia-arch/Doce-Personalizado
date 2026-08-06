@@ -35,3 +35,11 @@ Substitua pelo link real do checkout. Todos os botões de compra usam esse ender
 2. Abra **Settings → Pages**.
 3. Escolha a branch principal e a pasta `/root`.
 4. Salve e aguarde a publicação.
+
+
+## Correções de alinhamento
+
+- Removida a faixa visual “Compra 100% segura” com bandeiras e formas de pagamento que aparecia duplicada na oferta.
+- Corrigidas as margens nativas dos elementos `<figure>`, que faziam a arte da expert e a foto do carro ultrapassarem a área central no celular.
+- As duas imagens agora usam largura máxima de 100%, margens automáticas e alinhamento central responsivo.
+- Todas as imagens continuam incorporadas diretamente no `index.html`; não há pasta `assets`.
