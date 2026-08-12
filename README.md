@@ -65,3 +65,10 @@ O `CONFIG.checkoutUrl` padrão foi atualizado para a oferta de **R$ 20,90**, e a
 ## Observação comercial
 
 As possibilidades de renda apresentadas são objetivos de venda, não garantia de faturamento. Os resultados dependem da execução, divulgação, preço, demanda local e constância.
+
+## Atualização — destaque da oferta completa e rolagem para escolha
+
+- O botão **“quero garantir minha vaga”** logo abaixo do carrossel de sabores agora faz uma **rolagem suave** até a área de escolha entre as ofertas de R$ 10,00 e R$ 20,90, em vez de abrir diretamente o checkout.
+- A oferta **Plano Completo — R$ 20,90** recebeu mais destaque visual, mantendo a identidade da página: selo **⭐ MAIS VENDIDO ⭐**, indicação de **melhor custo-benefício**, detalhes em verde, estrelas e maior destaque para preço e botão.
+- O texto **“⚠️ Corra! Faltam apenas 8 vagas disponíveis nesta oferta.”** foi mantido sem alteração.
+- Os checkouts e os demais conteúdos da página foram preservados.
