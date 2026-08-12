@@ -1,28 +1,35 @@
 # Bolos Gelados Gourmet — página de vendas em formato de quiz
 
-Página completa de vendas em formato de quiz para o treinamento **Bolos Gelados Gourmet**, preparada para publicação no GitHub Pages.
+Página completa de vendas em formato de quiz para o treinamento **Bolos Gelados Gourmet**, pronta para publicação no GitHub Pages.
 
 ## Atualização desta versão
 
-- Abertura revisada para reduzir repetições e deixar a promessa mais direta.
-- Lista inicial atualizada com 8 sabores gourmet:
-  - Ninho com Nutella
-  - Chocolate Trufado
-  - Morango com Ninho
-  - Bombom de Morango
-  - Mousse de Chocolate Branco
-  - Prestígio Cremoso
-  - Coco com Abacaxi
-  - Oreo Cremoso
-- Carrossel da etapa final substituído pelas 8 imagens novas correspondentes.
-- Imagens ajustadas ao formato vertical **4:5**, com enquadramento central e legenda visível de cada sabor.
-- Pontos de navegação e textos alternativos do carrossel atualizados.
-- Capa, vitrine inicial, especialista, ingredientes, depoimentos, trabalhos das alunas e arte da oferta final mantidos com as imagens atualizadas da versão anterior.
-- Estrutura do quiz, cronômetros, botões e demais seções preservados.
+Foram alteradas **somente** as partes solicitadas da página:
+
+- seção final de **bônus** redesenhada para ficar no estilo visual da página de referência;
+- bônus apresentados em cards organizados, com imagem quadrada **1:1** e texto ao lado;
+- inclusão das imagens dos bônus **diretamente dentro do `index.html`** (sem pasta `assets`);
+- inclusão de um novo card para o bônus **Acesso Vitalício ao Treinamento**;
+- criação de **duas ofertas lado a lado** na seção final:
+  - **Plano Essencial — R$ 10,00**
+  - **Plano Completo — R$ 20,90** (com destaque de **Mais vendido**)
+- botão da oferta de **R$ 10,00** apontando para o checkout antigo;
+- botão da oferta de **R$ 20,90** apontando para o novo checkout informado;
+- ajuste do comportamento dos botões para aceitar checkout individual por oferta.
+
+## Bônus exibidos na página
+
+1. **Guia de Conservação e Durabilidade**
+2. **Acesso Vitalício ao Treinamento**
+3. **Embalagem e Apresentação**
+4. **Precificação Inteligente**
+5. **Como Vender Sem Aparecer**
 
 ## Imagens
 
-Todas as imagens estão incorporadas em Base64 dentro do próprio `index.html`. Não é necessário enviar uma pasta separada de imagens para o GitHub.
+Todas as imagens dos bônus estão incorporadas em Base64 dentro do próprio `index.html`.
+
+Não é necessário enviar nenhuma pasta extra de imagens para o GitHub.
 
 ## Arquivos
 
@@ -37,24 +44,23 @@ Todas as imagens estão incorporadas em Base64 dentro do próprio `index.html`. 
 4. Selecione a branch principal e a pasta raiz.
 5. Salve e aguarde a publicação.
 
-
 ## Meta Pixel
 
-Esta versão já inclui o **Meta Pixel ID `1067939512402354`** no `index.html`, com o evento padrão **PageView** disparado no carregamento da página.
+Esta versão mantém o **Meta Pixel ID `1067939512402354`** no `index.html`, com o evento padrão **PageView** disparado no carregamento da página.
 
-O **token de acesso da API de Conversões não foi colocado no HTML**, porque tokens de acesso são credenciais privadas e ficariam expostos publicamente no navegador/GitHub. Caso a API de Conversões (CAPI) seja configurada depois, o token deve ficar somente em um ambiente seguro no servidor/backend.
+## Checkouts
 
-## Checkout
-
-Checkout configurado na **Cakto**:
-
-Todos os botões de compra da oferta estão configurados para abrir:
-
+### Oferta de R$ 10,00
 ```text
 https://pay.cakto.com.br/3ft7qvb_1026273
 ```
 
-O endereço fica centralizado em `CONFIG.checkoutUrl`, próximo ao final do `index.html`, facilitando futuras alterações.
+### Oferta de R$ 20,90
+```text
+https://pay.cakto.com.br/c2gc4iw
+```
+
+O `CONFIG.checkoutUrl` padrão foi atualizado para a oferta de **R$ 20,90**, e a oferta de **R$ 10,00** usa um link próprio no botão correspondente.
 
 ## Observação comercial
 
