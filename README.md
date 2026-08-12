@@ -72,3 +72,9 @@ As possibilidades de renda apresentadas são objetivos de venda, não garantia d
 - A oferta **Plano Completo — R$ 20,90** recebeu mais destaque visual, mantendo a identidade da página: selo **⭐ MAIS VENDIDO ⭐**, indicação de **melhor custo-benefício**, detalhes em verde, estrelas e maior destaque para preço e botão.
 - O texto **“⚠️ Corra! Faltam apenas 8 vagas disponíveis nesta oferta.”** foi mantido sem alteração.
 - Os checkouts e os demais conteúdos da página foram preservados.
+
+## Ajuste de navegação — versão v4
+
+- Os dois botões adicionais **“quero garantir minha vaga”** da parte final da página não abrem mais o checkout diretamente.
+- Agora, assim como o botão abaixo do carrossel de sabores, eles fazem **rolagem suave automática** até a seção com as duas opções de oferta (**R$ 10,00** e **R$ 20,90**).
+- Somente os botões dentro dos próprios cards das duas ofertas seguem para seus respectivos checkouts.
